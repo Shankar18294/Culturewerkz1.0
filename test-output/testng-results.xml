@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10303" started-at="2020-11-30T16:00:40 IST" finished-at="2020-11-30T16:00:50 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10303" started-at="2020-11-30T16:00:40 IST" finished-at="2020-11-30T16:00:50 IST">
+      <class name="com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn@68bbe345]" name="setUp" is-config="true" duration-ms="7867" started-at="2020-11-30T16:00:40 IST" finished-at="2020-11-30T16:00:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="signInWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn@68bbe345]" name="signInWithValidCredentials" duration-ms="2227" started-at="2020-11-30T16:00:48 IST" data-provider="signIn" finished-at="2020-11-30T16:00:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hariharan.br@pratian.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInWithValidCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn@68bbe345]" name="tearDown" is-config="true" duration-ms="175" started-at="2020-11-30T16:00:50 IST" finished-at="2020-11-30T16:00:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
