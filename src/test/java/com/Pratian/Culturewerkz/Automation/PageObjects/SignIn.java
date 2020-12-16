@@ -1,5 +1,6 @@
 package com.Pratian.Culturewerkz.Automation.PageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,9 @@ public class SignIn extends BasePage{
 		PageFactory.initElements(driver,this);
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	
 	//PROPERTIES
 	@FindBy(xpath = "//*[@id=\"userNameInput\"]")
 	WebElement userName;
@@ -19,6 +23,9 @@ public class SignIn extends BasePage{
 	WebElement password;
 	@FindBy(xpath = "//*[@id=\"submitButton\"]")
 	WebElement signInButton;
+	@FindBy(xpath = "//*[@id=\"errorText\"]")
+	WebElement errorMessege;
+	
 	
 	//METHODS
 	public void provideUserName(String userName)
@@ -35,6 +42,18 @@ public class SignIn extends BasePage{
 		signInButton.click();
 		return new Home(driver);
 	}
+	
+	public boolean loginFailed()
+	{
+		return errorMessege.isDisplayed();
+	}
+	
+	public String errorMessege()
+    {
+		System.out.println(errorMessege.getText());
+        return errorMessege.getText();
+        
+    }
 	
 	
 

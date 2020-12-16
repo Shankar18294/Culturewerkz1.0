@@ -3,6 +3,8 @@ package com.Pratian.Culturewerkz.Automation.TestClasses;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,6 +14,7 @@ import com.Pratian.Culturewerkz.Automation.PageObjects.SignIn;
 
 public class TestSignIn extends BaseTest {
 
+	
 	@Test(dataProvider = "signIn")
 	public void signInWithValidCredentials(String userName, String password) throws IOException
 	{
@@ -23,7 +26,7 @@ public class TestSignIn extends BaseTest {
 		signIn.provideUserName(userName);
 		signIn.providePassword(password);
 		Home home= signIn.clickSignInButton(driver);
-		Assert.assertEquals(home.getUserName(), "Krishna Kumar Sivakumar ");		
+		Assert.assertEquals(home.getUserName(), "Krishna Kumar Sivakumar");		
 	}
 	
 
@@ -36,17 +39,5 @@ public class TestSignIn extends BaseTest {
 
 		};
 	}
-
-	//	@Test
-	//	public void signInWithInvalidCredentials(String userName, String password)
-	//	{
-	//		
-	//	}
-	//	
-	//	@Test
-	//	public void signInWithoutCredentials()
-	//	{
-	//		
-	//	}
 
 }

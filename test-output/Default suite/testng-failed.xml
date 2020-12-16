@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn">
+      <class name="com.Pratian.Culturewerkz.Automation.TestClasses.TestWorkflow">
         <methods>
-          <include name="signInWithValidCredentials" invocation-numbers="0"/>
+          <include name="feedback"/>
+          <include name="publishObjective"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn -->
+      </class> <!-- com.Pratian.Culturewerkz.Automation.TestClasses.TestWorkflow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
