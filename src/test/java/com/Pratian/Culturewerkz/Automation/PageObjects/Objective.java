@@ -27,15 +27,16 @@ public class Objective extends BasePage{
 	WebElement password;
 	@FindBy(xpath = "//*[@id=\"submitButton\"]")
 	WebElement signInButton;
-	
-	@FindBy(xpath = "/html/body/div[4]/div[2]/div[1]/div[1]/div[1]/div/div[2]")
-	WebElement objectives;
-	
-	
 
-	/*
-	 * @FindBy(css =".summary_font_size") WebElement objectives;
-	 */
+	@FindBy(xpath = "/html/body/div[4]/div[2]/div[1]/div[1]/div[1]/p")
+	WebElement objectives;
+
+
+
+
+	@FindBy(css =".branding-img") 
+	WebElement logo;
+
 
 	@FindBy(xpath = "//h6")
 	WebElement objective;
@@ -109,7 +110,7 @@ public class Objective extends BasePage{
 	}
 
 	public void clickonObjective(WebDriver driver) 
-	
+
 	{
 		je.executeScript("arguments[0].click();",objectives);
 
@@ -204,7 +205,7 @@ public class Objective extends BasePage{
 		title.clear();
 		this.title.sendKeys(titleName);
 	}
-	
+
 	public void clickonButtonSaveAsDraft(WebDriver driver) {
 		je.executeScript("arguments[0].click();",buttonSaveAsDraft);
 	}
@@ -213,5 +214,12 @@ public class Objective extends BasePage{
 		return draftResult.isDisplayed();
 	}
 
+
+	public void clickLogo(WebDriver driver) 
+
+	{
+		je.executeScript("arguments[0].click();",logo);
+
+	}
 
 }

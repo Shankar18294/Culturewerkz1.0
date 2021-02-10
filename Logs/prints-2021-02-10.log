@@ -1,0 +1,5 @@
+20:56:06.703 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - username entered
+20:56:09.114 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - password entered
+20:56:41.439 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - signIn button clicked
+21:05:20.757 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - username entered
+21:05:20.954 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - password entered

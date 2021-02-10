@@ -1,0 +1,5 @@
+23:40:48.451 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSearch2 - Entered name in the search field
+23:46:31.759 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - username entered
+23:46:31.908 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - password entered
+23:46:43.758 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - signIn button clicked
+23:46:43.972 [main] DEBUG com.Pratian.Culturewerkz.Automation.TestClasses.TestSignIn - assertion passed
