@@ -1,0 +1,39 @@
+pipeline {
+     agent any
+     
+          stages {
+          
+                stage('checkout') {
+                steps{
+             checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Shankar18294/Culturewerkz1.0.git']]])
+                     }
+                                  }
+                                  
+             stage('Build') {
+              steps{
+     echo 'building..'
+     bat "mvn clean"
+    }
+}
+
+stage('Test') {
+              steps{
+         echo 'testing..'
+         bat "mvn test"
+    }
+}
+
+stage('Archive') {
+              steps{
+              echo '..'
+    }
+}
+
+stage('Deploy') {
+              steps{
+        echo 'deploying..'
+    }
+}
+
+    }
+  }
