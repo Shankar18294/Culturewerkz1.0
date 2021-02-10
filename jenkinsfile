@@ -23,9 +23,9 @@ stage('Test') {
     }
 }
 
-stage('Archive') {
+stage('Compile') {
               steps{
-              echo '..'
+              bat "mvn compile"
     }
 }
 
